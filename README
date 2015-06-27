@@ -1,1 +1,44 @@
-this is my first line
+this is my first lineg
+
+$ git clone git@github.com:u820704/today-github-demo.git workspace
+Initialized empty Git repository in /home/ubuntu/workspace/.git/
+Warning: Permanently added 'github.com,192.30.252.131' (RSA) to the list of known hosts.
+fatal: Cannot update paths and switch to branch 'master' at the same time.
+Did you intend to checkout 'origin/master' which can not be resolved as commit?
+u820704@today-github-demo1:~/workspace (master) $ git status
+On branch master
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+u820704@today-github-demo1:~/workspace (master) $ touch README
+u820704@today-github-demo1:~/workspace (master) $ git add .
+u820704@today-github-demo1:~/workspace (master) $ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)  
+
+        new file:   README
+
+u820704@today-github-demo1:~/workspace (master) $ git commit -am "Created README"
+[master (root-commit) 98a4d81] Created README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README
+u820704@today-github-demo1:~/workspace (master) $ git remote -v
+origin  git@github.com:u820704/today-github-demo.git (fetch)
+origin  git@github.com:u820704/today-github-demo.git (push)
+u820704@today-github-demo1:~/workspace (master) $ git push origin master
+The authenticity of host 'github.com (192.30.252.129)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.129' (RSA) to the list of known hosts.
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 235 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:u820704/today-github-demo.git
+ * [new branch]      master -> master
+u820704@today-github-demo1:~/workspace (master) $ 
+
